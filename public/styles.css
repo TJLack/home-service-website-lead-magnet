@@ -1,0 +1,54 @@
+:root {
+  --deep-blue: #0a2540;
+  --electric: #1e90ff;
+  --gold: #d4af37;
+  --black: #000;
+  --text: #f3f5f8;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: radial-gradient(circle at top, #102d4e 0%, #05080e 55%, #000 100%);
+  color: var(--text);
+}
+.app { max-width: 980px; margin: 0 auto; padding: 20px; }
+.card {
+  background: rgba(9, 24, 43, 0.92);
+  border: 1px solid rgba(30, 144, 255, 0.35);
+  border-radius: 18px;
+  padding: 24px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 30px rgba(30, 144, 255, 0.1);
+}
+.brand { font-weight: 700; color: var(--gold); margin-bottom: 12px; }
+.brand span { display: block; font-size: 12px; color: #cdd9e6; }
+h1 { font-size: clamp(1.8rem, 4vw, 2.8rem); margin: 0 0 12px; }
+.subheadline { color: #b8c8da; max-width: 70ch; }
+.row { display: flex; gap: 8px; flex-wrap: wrap; }
+input, button {
+  border-radius: 10px;
+  border: 1px solid #2a4765;
+  padding: 12px;
+  font-size: 16px;
+}
+input { background: #07111f; color: #fff; flex: 1; min-width: 220px; }
+button {
+  background: linear-gradient(120deg, var(--electric), #4da8ff);
+  color: #fff;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+}
+.trust-strip { display: grid; grid-template-columns: repeat(2,1fr); gap: 8px; margin-top: 12px; font-size: 12px; }
+.trust-strip span { background: #08182b; border: 1px solid #133a5c; padding: 8px; border-radius: 8px; }
+.sections { display: grid; grid-template-columns: 1fr; gap: 12px; margin-top: 16px; }
+.revenue-teaser { font-size: 1.15rem; color: var(--gold); font-weight: 700; }
+.hidden { display: none; }
+.score-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(140px,1fr)); gap: 10px; }
+.score-card { background:#07111f; border:1px solid #1d3650; border-radius:10px; padding:10px; }
+.money { font-size: 1.2rem; color: var(--gold); font-weight: 700; }
+.issue { border-left: 4px solid var(--electric); background: #07111f; padding: 8px 12px; margin: 10px 0; }
+.cta { margin-top: 20px; padding: 16px; border: 1px solid rgba(212,175,55,0.5); border-radius: 12px; background: #101625; }
+.cta a { display:inline-block; margin-top:8px; text-decoration:none; }
+@media (min-width: 760px) { .sections { grid-template-columns: 1fr 1fr; } }

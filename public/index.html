@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Key City Digital | Website Revenue Leak Detector</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section id="landing" class="card">
+        <div class="brand">Key City Digital <span>We Build Local Legends</span></div>
+        <h1>Find Out How Much Your Website Is Costing You</h1>
+        <p class="subheadline">Most Texas home service websites are losing leads because they are outdated, weak at conversion, and not structured for modern search.</p>
+        <form id="scan-form" class="row">
+          <input id="website-url" type="url" placeholder="Enter your website URL" required />
+          <button type="submit">Scan My Website (Free)</button>
+        </form>
+        <div class="trust-strip">
+          <span>Built for Texas Home Service Pros</span>
+          <span>AI-Powered Website Analysis</span>
+          <span>Takes About 30 Seconds</span>
+          <span>No Spam</span>
+        </div>
+        <div class="sections">
+          <article>
+            <h2>Most Websites Don’t Have a Traffic Problem — They Have a Conversion Problem</h2>
+            <ul>
+              <li>No clear calls to action</li>
+              <li>Weak trust signals</li>
+              <li>Poor SEO structure</li>
+              <li>Not ready for AI-driven search</li>
+              <li>Outdated design that hurts credibility</li>
+            </ul>
+          </article>
+          <article>
+            <h3>What you'll get</h3>
+            <ul>
+              <li>Website Score</li>
+              <li>Revenue Opportunity</li>
+              <li>What’s Broken + What to Fix</li>
+            </ul>
+            <p class="revenue-teaser">See how much revenue your website could be missing</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="scanning" class="card hidden">
+        <h2>Scanning your website...</h2>
+        <p id="scan-state">Capturing website visuals...</p>
+      </section>
+
+      <section id="locked" class="card hidden">
+        <h2>Scan Complete</h2>
+        <div id="teaser"></div>
+        <form id="lead-form">
+          <input name="name" placeholder="Name" required />
+          <input name="email" type="email" placeholder="Email" required />
+          <input name="phone" placeholder="Phone" required />
+          <input name="businessName" placeholder="Business Name" required />
+          <input name="city" placeholder="City" required />
+          <input name="monthlyBudget" placeholder="Monthly Marketing Budget (Optional)" />
+          <button type="submit">Unlock My Full Report</button>
+        </form>
+      </section>
+
+      <section id="report" class="card hidden"></section>
+    </main>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
